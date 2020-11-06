@@ -76,44 +76,139 @@ header, footer {
    may need to be different in order to style the page correctly. */
 
 
-
 /* Imported Typfaces */
 
-
-
-
+@font-face {
+    font-family:josefin slab;
+    src: url(.../fonts/josefinslab-regular.ttf) format('truetype');
+    font-weight:normal;
+    font-style:normal;
+}
+@font-face {
+    font-family:montserrat;
+    src: url(.../fonts/montserrat-regular.ttf) format('truetype');
+    font-weight:normal;
+    font-style:normal;
+}
 
 /* Typography Styles */
 
+html {
+    font-family: montserrat, arial, sans-serif;
+}
 
+h1 {
+    font-family: josefin slab, arial, serif;
+    letter-spacing: 2px;
+    font-size: 60px;
+    margin: 18px;
+    text-align: center;
+}
 
+h2 {
+    font-family: josefin slab, arial, serif;
+    letter-spacing: 2px;
+    font-size: 24px;
+        
+}
 
+h2 + p {
+    text-indent: 24px;
+}
 
+p {
+   font-size: 12px;
+    letter-spacing: .5px;
+    word-spacing: 2px;
+}
+
+li {
+    font-size: 12px;
+    letter-spacing: .5px;
+    word-spacing: 2px;
+}
+
+figcaption {
+    font-size: 12px;
+    margin-bottom: 32px;
+}
 
 /* Link Styling */
 
+a {
+    outline: none;
+}
 
+a:link {
+    color: #33658A;
+}
+a:visited {
+    color: #33658A;
+}
 
-
-
+a:focus,
+a:hover {
+    text-decoration: none
+}
 
 /* List Styling */
 
+ul {
+   margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: 0;
+    margin-right: 0;
+    list-style-type: square;
+}
 
+ol {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: 0;
+    margin-right: 0;
+    list-style-type:lower-alpha;
+}
 
-
-
+.long-list a:hover {
+    text-transform: capitalize
+}
 
 /* Navigation Menu */
 
+nav {
+    padding-left: 0rem;
+    margin-top: 4px;
+}
 
+nav a {
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    line-height: 3;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 24px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #33658A;
+}
 
+nav a:focus,
+nav a:hover {
+    color: #fff;
+    background-color: #33658a
+}
 
-
+nav a:active {
+    color: #fff;
+    background-color: #000;
+}
 
 /* Footer Styles */
 
-
+footer {
+    text-align: center;
+}
 
 
 
